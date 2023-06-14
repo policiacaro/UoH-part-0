@@ -1,6 +1,8 @@
 # UoH-part-0
 Exercises for the fullstack course on University of Helsinki
 
+Section 0.5 Single Page App Diagram
+
 ```mermaid
 sequenceDiagram
   participant browser
