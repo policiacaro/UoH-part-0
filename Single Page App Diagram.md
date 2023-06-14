@@ -9,13 +9,13 @@ sequenceDiagram
   participant server
   
   browser->>+server: GET https://studies.cs.helsinki.fi/exampleapp/spa
-  server->>-browser: HTML file
+  server-->>-browser: HTML file
   note right of browser: This procedure is the same as before, except our Javascript file is different now
   browser->>+server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
-  server->>-browser: CSS file
+  server-->>-browser: CSS file
   browser->>+server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
-  server->>-browser: Javascript file
+  server-->>-browser: Javascript file
   note right of browser: Around line 30 of spa.js, a GET request is made
   browser->>+server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
-  server->>-browser: Javascript Object Notation file
+  server-->>-browser: Javascript Object Notation file
 ```
